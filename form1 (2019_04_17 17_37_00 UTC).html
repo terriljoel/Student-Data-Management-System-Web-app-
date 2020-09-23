@@ -1,0 +1,78 @@
+<html>
+
+   <head>
+	   <title>
+	       Main page
+       </title>
+       <style style="text/css">
+       #heading
+    {
+        color:brown;
+        margin-top: 30px;
+    }
+    .textbox{
+    	
+    	margin-left: 465px;
+    	height: 40px;
+    	width:300px;
+    	position: relative;
+    	margin-top: 160px;
+    	font-size: 30;
+
+    	
+
+    }
+    .usn
+    {     position: absolute;
+           margin-top:220px;
+           font-size: 50;
+           margin-left: 570px;
+    }
+    .instruction
+    {
+    	margin-left: 466px;
+    }
+    .submit
+    {
+           position: relative;
+           margin-top:10px;
+           height: 30;
+           width: 80px
+    }
+    .submit:hover{
+			color:red;
+
+		}
+        
+
+   .submit
+        {
+        	padding:0px;
+        	
+        	transition: transform.2s;
+        	width: 80px;
+        	height: 40px;
+        }
+        .submit:hover
+        {
+        	transform: scale(1.1);
+
+        }
+   </style>
+    </head>
+    
+    <body bgcolor="orange">
+    	<hr>
+    	<p class="usn"><u>USN</u></p>
+    	<p id="heading" align="center" style="font-size: 50px" ><u>College database mangement system</u></p>
+    		<hr>
+    		<form action="formmainphp.php" method="post">
+    			<input type="text" class="textbox" name="usn">
+    			 <div  style="color:red" class="instruction" ><b><a href="form2.html">Register New 
+    			 	User
+    			 </a></b></div>
+             <input type="submit" style="margin-left:570px "  class="submit">
+    		</form>
+   
+    </body>
+</html>

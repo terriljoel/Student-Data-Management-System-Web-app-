@@ -1,0 +1,243 @@
+
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+		
+			
+            a
+            {
+                color:blue;
+            }
+            a:hover
+            {
+                color:red;
+            }
+		button:hover{
+			color:red;
+
+		}
+        .table
+        {
+            padding-left: 380px
+        }
+        .subtable
+        {
+            width: 500px;
+        }
+
+   .zoom2
+        {
+        	padding:0px;
+        	
+        	transition: transform.2s;
+        	width: 80px;
+        	height: 40px;
+        }
+        .zoom2:hover
+        {
+        	transform: scale(1.1);
+
+        }
+	</style>
+	
+	</head>
+<body bgcolor="green">
+	   <div style="border:0px;border-style: solid" class="table" style="margin-left: 70px" class="table">
+        <h1 style="position: relative;margin-left: 165px;color:yellow">Update form</h1>
+	<p>	<form action="update.php" method="post">
+		<div style="border:3px;border-style: solid" class="subtable"  style="background-color: orange"><table width="500"   cellspacing="5" border="0" >
+				
+				<tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Name
+                	</th>
+                	<th align="left">
+                		<input type="text" value="nochange"  name="name" placeholder="Name"  />
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Age
+                	</th>
+                	<th align="left">
+                		<input type="text" value="nochange" name="age" placeholder="Age"  />
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Sex
+                	</th>
+                	<th align="left">
+                		<input type="radio" value="Male" name="sex"  />Male
+                		<input type="radio"  value="Female" name="sex"  />
+                		Female
+                        <input type="radio"  value="n" name="sex"  checked="checked"  />No change
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Section
+                	</th>
+                	<th align="left">
+                		<select name="section">
+                			<option value="n">Select--</option>
+                			<option value="A">A</option>
+                			<option value="B">B</option>
+                			<option value="C">C</option>
+                			<option value="D">D</option>
+                		</select>
+                	</th>
+                </tr>
+                 <tr bgcolor="#FA6E17" height="40px">
+
+                
+                	<th>
+                		Department
+                	</th>
+                	<th align="left">
+                		<select name="department">
+                			
+                			<option value="n">Select--</option>
+                			<option value="Computer science engineering">Computer Science engineering</option>
+                			<option value="Mechanical engineering">Mechanical engineering</option>
+                			<option value="Electrical engineering">Electrical engineering</option>
+                			<option value="Eelctronics and communication engineering">Electronics and Communication engineering</option>
+                		</select>
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                <th>
+                		Sem
+                	</th>
+                	<th align="left">
+                		<select name="sem">
+                			<option value="n" >Select--</option>
+                			<option value="1">1</option>
+                			<option value="2">2</option>
+                			<option value="3">3</option>
+                			<option value="4">4</option>
+                			<option value="5">5</option>
+                			<option value="6">6</option>
+                			<option value="7">7</option>
+                			<option value="8">8</option>
+                		</select>
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Birth date
+                	</th>
+                	<th align="left">
+                		<input type="text" name="bdate" placeholder="dd/mm/yyyy" value="nochange">
+                	</th>
+                </tr>
+                 <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Course Number
+                	</th>
+                	<th align="left">
+                		<input type="text" name="coursenumber" placeholder="Course number" value="nochange"  ><span style="color:red">* also course name</span>
+                	</th>
+                </tr>
+             
+
+        <tr height="40px" bgcolor="#FA6E17">
+					<th align="center">
+						Course Name
+					</th>
+					<th align="left">
+						<input type="text" name="coursename" placeholder="Course Name" value="nochange" />
+					</th>
+				</tr>
+				
+				 <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Admission date
+                	</th>
+                	<th align="left">
+                		<input type="text" name="adate" placeholder="dd/mm/yyyy"  value="nochange">
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                <th>
+                		Admission Through
+                	</th>
+                	<th align="left">
+                		<select name="athrough">
+                			<option  value="n">Select--</option>
+                			<option value="CET">CET</option>
+                			<option value="COMETK">COMETK</option>
+                			<option value="MANAGEMENT">MANAGEMENT</option>
+                			
+                		</select>
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Admission Fee
+                	</th>
+                	<th align="left">
+                		<input type="text" value="nochange" name="afee" placeholder="Fee" />
+                	</th>
+                </tr>
+                  <tr bgcolor="#FA6E17" height="40px">
+                <th>
+                        Payment Method
+                    </th>
+                    <th align="left">
+                        <select name="pmethod">
+                            <option value="n">Select--</option>
+                            <option value="Cheque">CHEQUE</option>
+                            <option value="DD">DD</option>
+                            <option value="Cash">CASH</option>
+                            
+                        </select>
+                    </th>
+                </tr>
+           <tr bgcolor="#FA6E17" height="40px">
+                
+                    <th>
+                        Mse 1
+                    </th>
+                    <th align="left">
+                        <input type="text" name="msc1" placeholder="marks" value="nochange"  />
+                    </th>
+                </tr>
+			
+            <tr bgcolor="#FA6E17" height="40px">
+                
+                    <th>
+                        Mse 2
+                    </th>
+                    <th align="left">
+                        <input type="text" value="nochange" name="msc2" placeholder="marks"  />
+                    </th>
+                </tr><tr bgcolor="#FA6E17" height="40px">
+                
+                    <th>
+                        SEE
+                    </th>
+                    <th align="left">
+                        <input type="text" value="nochange" name="see" placeholder="marks"  />
+                    </th>
+                </tr>
+</table></div><h3><a href="coursedetails.html">List of courses offered by departments</a></h3>
+<button style="height:40px;width:70px;margin-left: 550px" class="zoom2">Update</button> 
+			
+			<br>
+			
+ </form>
+ </div>
+	
+	
+</body>
+</html>

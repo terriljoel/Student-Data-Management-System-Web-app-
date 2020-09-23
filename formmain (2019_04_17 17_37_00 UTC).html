@@ -1,0 +1,117 @@
+<html>
+<head>
+	<title>
+		Form 3
+	</title>
+	<style type="text/css">
+		.a
+		{
+			
+			
+			height: 200px;
+			position: absolute;
+			margin-left: 200px;
+				margin-top:150px;
+			
+
+		}
+		.b
+		{
+			
+			
+			position: absolute;
+			margin-left: 500px;
+			margin-top:150px;
+			height: 200px;
+
+		}
+		.c
+		{
+			
+			position: absolute;
+			margin-top:150px;
+			margin-left: 800px;
+			height: 200px;
+
+
+		}
+		Button
+		{
+			height: 40px;
+			width:90px;
+			margin-top:440px;
+			margin-left: 550px;
+		}
+        Button:hover
+        {
+        	color:red;
+        }
+        .zoom
+        {
+        	padding:0px;
+        	background-color: orange;
+        	transition: transform.2s;
+        	width: 200px;
+        	height: 200px;
+        	margin:0 auto;
+        }
+        .zoom:hover
+        {
+        	transform: scale(1.5);
+
+        }
+       .zoom2
+        {
+        	padding:0px;
+        	
+        	transition: transform.2s;
+        	width: 80px;
+        	height: 40px;
+        }
+        .zoom2:hover
+        {
+        	transform: scale(1.1);
+
+        }
+	</style>
+</head>
+<body bgcolor="orange">
+	
+<table class="a" cellpadding="5px">
+	<tr><td><div class="zoom"><a href="display.php"><img src="1.png" height="200px"  ></a></div>
+	</td>
+
+	</tr>
+	<tr>
+		<th style="font-size:25px">
+		Student info
+	</th>
+	</tr>
+</table>
+<table class="b" cellpadding="5px">
+	<tr><th><div class="zoom"><a href="updateform.html"><img src="2.png"height="200px"></a></div>
+	</th>
+
+	</tr>
+	<tr>
+		<th style="font-size:25px">
+		Update info
+	</th>
+	</tr>
+</table >
+	<table class="c" cellpadding="5px">
+	<tr><th><div class="zoom"><a href="delete.php"><img src="3.png" height="200px" ></a></div>
+	</th>
+
+	</tr>
+	<tr>
+		<th style="font-size:25px">
+		Delete info
+	</th>
+	</tr>
+</table>
+<a href="main.html" ><Button class="zoom2">Log out</Button></a>
+
+</body>
+</html>
+

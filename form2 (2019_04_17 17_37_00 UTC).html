@@ -1,0 +1,221 @@
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+		
+			
+            a
+            {
+                color:yellow;
+            }
+            a:hover
+            {
+                color:red;
+            }
+		button:hover{
+			color:red;
+
+		}
+        .table
+        {
+            padding-left: 380px
+        }
+        .subtable
+        {
+            width: 500px;
+        }
+
+   .zoom2
+        {
+        	padding:0px;
+        	
+        	transition: transform.2s;
+        	width: 80px;
+        	height: 40px;
+        }
+        .zoom2:hover
+        {
+        	transform: scale(1.1);
+
+        }
+	</style>
+	
+	</head>
+<body bgcolor="green">
+	   <div style="border:0px;border-style: solid" class="table" style="margin-left: 70px" class="table">
+	<p>	<form action="new.php" method="post">
+		<div style="border:3px;border-style: solid" class="subtable"  style="background-color: orange"><table width="500"   cellspacing="5" border="0" >
+				<tr bgcolor="#FA6E17" height="40px" >
+					<th  align="center">
+						USN
+					</th>
+					<th align="left">
+						<input type="text" name="usn" placeholder="University Serial Number" required />
+					</th>
+				</tr>
+				<tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Name
+                	</th>
+                	<th align="left">
+                		<input type="text" name="name" placeholder="Name" required />
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Age
+                	</th>
+                	<th align="left">
+                		<input type="text" name="age" placeholder="Age" required />
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Sex
+                	</th>
+                	<th align="left">
+                		<input type="radio" value="Male" name="sex" required />Male
+                		<input type="radio"  value="Female" name="sex" required />
+                		Female
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Section
+                	</th>
+                	<th align="left">
+                		<select name="section">
+                			<option value="">Select--</option>
+                			<option value="A">A</option>
+                			<option value="B">B</option>
+                			<option value="C">C</option>
+                			<option value="D">D</option>
+                		</select>
+                	</th>
+                </tr>
+                 <tr bgcolor="#FA6E17" height="40px">
+
+                
+                	<th>
+                		Department
+                	</th>
+                	<th align="left">
+                		<select name="department">
+                			
+                			<option value="">Select--</option>
+                			<option value="Computer science engineering">Computer Science engineering</option>
+                			<option value="Mechanical engineering">Mechanical engineering</option>
+                			<option value="Electrical engineering">Electrical engineering</option>
+                			<option value="Eelctronics and communication engineering">Electronics and Communication engineering</option>
+                		</select>
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                <th>
+                		Sem
+                	</th>
+                	<th align="left">
+                		<select name="sem">
+                			<option value="" >Select--</option>
+                			<option value="1">1</option>
+                			<option value="2">2</option>
+                			<option value="3">3</option>
+                			<option value="4">4</option>
+                			<option value="5">5</option>
+                			<option value="6">6</option>
+                			<option value="7">7</option>
+                			<option value="8">8</option>
+                		</select>
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Birth date
+                	</th>
+                	<th align="left">
+                		<input type="text" name="bdate" placeholder="dd/mm/yyyy" required >
+                	</th>
+                </tr>
+                 <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Course Number
+                	</th>
+                	<th align="left">
+                		<input type="text" name="coursenumber" placeholder="Course number" required >
+                	</th>
+                </tr>
+             
+
+        <tr height="40px" bgcolor="#FA6E17">
+					<th align="center">
+						Course Name
+					</th>
+					<th align="left">
+						<input type="text" name="coursename" placeholder="Course Name" required />
+					</th>
+				</tr>
+				
+				 <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Admission date
+                	</th>
+                	<th align="left">
+                		<input type="text" name="adate" placeholder="dd/mm/yyyy"  required>
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                <th>
+                		Admission Through
+                	</th>
+                	<th align="left">
+                		<select name="athrough">
+                			<option >Select--</option>
+                			<option value="CET">CET</option>
+                			<option value="COMETK">COMETK</option>
+                			<option value="MANAGEMENT">MANAGEMENT</option>
+                			
+                		</select>
+                	</th>
+                </tr>
+                <tr bgcolor="#FA6E17" height="40px">
+                
+                	<th>
+                		Admission Fee
+                	</th>
+                	<th align="left">
+                		<input type="text" name="afee" placeholder="Fee" required />
+                	</th>
+                </tr>
+                  <tr bgcolor="#FA6E17" height="40px">
+                <th>
+                        Payment Method
+                    </th>
+                    <th align="left">
+                        <select name="pmethod">
+                            <option value="">Select--</option>
+                            <option value="Cheque">CHEQUE</option>
+                            <option value="DD">DD</option>
+                            <option value="Cash">CASH</option>
+                            
+                        </select>
+                    </th>
+                </tr>
+
+			</table></div><h3><a href="coursedetails.html">List of courses offered by departments</a></h3>
+
+			
+			<br>
+		<button style="height:40px;width:70px;margin-left: 550px" class="zoom2">Submit</button>	
+ </form>
+ </div>
+	
+	
+</body>
+</html>
